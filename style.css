@@ -3,3 +3,102 @@
     margin: 0;
     box-sizing: border-box;
 }
+.tutto{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* contatti sulla sinistra */
+.contatti{
+    width: 30%;
+    height: 100%;
+}
+.opzioni{
+    width: 100%;
+    height: 10%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+}
+.userimg{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.immagine{
+    width: 20%;
+    height: 67%;
+    border-radius: 40px;
+    margin-left: 15px;
+}
+.immagine > img{
+    width: 100%;
+}
+.icone{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    padding-right: 30px;
+}
+.icone > i{
+    font-size: 20px;
+}
+
+/* parte blu notifiche */
+.notifiche{
+    width: 100%;
+    height: 15%;
+    background-color: rgb(27, 142, 236);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icona-notifiche{
+    font-size: 20px;
+}
+.icona-notifiche > i{
+    
+}
+.cerchio-not{
+    width: 80%;
+    height: 90%;
+    background-color: white;
+    margin-left: 15px;
+    padding-top: 20px;
+    padding-right: 10px;
+    display: flex;
+    align-content: center;
+    border-radius: 20px;
+}
+.scritte-notifiche{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.scritte-notifiche > h4{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+
+
+
+
+
+
+/* chat sulla destra */
+.chat{
+    flex-grow: 1;
+    height: 100%;
+    background-color: bisque;
+}

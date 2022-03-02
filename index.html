@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 </head>
 <body>
-    <div class="tutto">
+    <div id="tutto">
 
         <div class="contatti">
 
@@ -44,6 +45,34 @@
 
             </div>
 
+            <div class="cerca-user">
+                <div class="barra">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input  type="text" placeholder="Cerca o inizia una nuova chat" value="">
+                </div>
+            </div>
+
+            <div class="chat-utenti">
+                <div v-for="(utenti , i) in listaContatti" class="casella">
+
+                    <div class="notifiche3">
+
+                        <div class="userimg3">
+                            <div class="immagine3">
+                                <img src="img/img2.png" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="scritte-notifiche2">
+                            <h3>{{listaContatti.nome}}</h3>
+                            <p><i class="fa-solid fa-check"></i>Ciao, che fai?</p>
+                        </div>
+        
+                    </div>
+
+                </div>
+            </div>
+
         </div>
 
 
@@ -51,9 +80,25 @@
 
 
 
-        <div class="chat">
+         <div class="chat" class="opzioni">
+            <div class="opzioni">
 
-        </div>
+                <div class="userimg2">
+                    <div class="immagine2">
+                        <img src="img/img2.png" alt="">
+                    </div>
+                    <h2>Franco </h2>
+                </div>
+
+                <div class="icone">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+
+            </div>
+            
+
+        </div> 
 
 
 
@@ -70,5 +115,6 @@
 
 
     </div>   
+    <script src="app.js"></script>
 </body>
 </html>

@@ -3,203 +3,253 @@
     margin: 0;
     box-sizing: border-box;
 }
-.tutto{
+
+.centrale{
     display: flex;
-    width: 100%;
+
+}
+.sinistra{
+    width: 30%;
     height: 100vh;
 }
 
-/* contatti sulla sinistra */
-.contatti{
-    width: 30%;
-    height: 100%;
+/* header */
+.header-sinistra{
+    background-color: rgb(189, 183, 183);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-.opzioni{
-    width: 100%;
-    height: 10%;
-    background-color: lightgray;
-    display: flex;
-    justify-content: space-between;
-}
-.userimg{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-.immagine{
-    width: 20%;
-    height: 67%;
-    border-radius: 40px;
-    margin-left: 15px;
-}
-.immagine > img{
-    width: 100%;
-}
-.icone{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 30px;
-    padding-right: 30px;
-}
-.icone > i{
-    font-size: 20px;
-}
-
-/* parte blu notifiche */
-.notifiche{
-    width: 100%;
-    height: 15%;
-    background-color: rgb(27, 142, 236);
+.margin{
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+    margin: 0 auto;
 
-.icona-notifiche{
-    font-size: 20px;
 }
-.icona-notifiche > i{
+.img-utente{
+    width: 50px;
+    height: 50px;
+}
+.img-utente > img{
+    width: 100%;
+}
+.icone-header{
+    display: flex;
+    gap: 25px;
+}
+.icone-header > i{
+    font-size: 20px;
     
 }
-.cerchio-not{
-    width: 80%;
-    height: 90%;
-    background-color: white;
-    margin-left: 15px;
-    padding-top: 20px;
-    padding-right: 10px;
-    display: flex;
-    align-content: center;
-    border-radius: 20px;
-}
-.scritte-notifiche{
-    display: flex;
-    width: 80%;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.scritte-notifiche > h4{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-/* barra ricerca */
-.cerca-user{
+/* parte blu */
+.parte-notifiche{
     width: 100%;
-    height: 6%;
-    position: relative;
-   
+    height: 17%;
+    background-color: rgb(21, 154, 231);
 }
-.barra{
-   
-}
-.barra > input{
-    width: 97%;
-    height: 80%;
-    padding: 5px;
-    padding-left: 75px;
-    margin: 5px;
-    border-radius: 6px;
-    border-style: none;
-    border: 1px solid black;
-    background-color: lightgrey;
-}
-.barra > i{
-    position: absolute;
-    top: 11px;
-    left: 18px;
-}
-
-/* singola chat */
-.chat-utenti{
-    width: 100%;
-    height: 11%;
-}
-.casella{
-    width: 97%;
+.centro-notifiche{
+    width: 90%;
     height: 100%;
     margin: 0 auto;
-}
-/* vari utenti sinistra */
-.notifiche3{
-    width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 0;
+    gap: 20px;
 }
-
-.scritte-notifiche2{
-    display: flex;
-    width: 80%;
-    height: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 2px;
-}
-
-.userimg3{
-    width: 20%;
-    height: 100%;
+.icona-campana{
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
 }
-.immagine3{
+.icona-campana > i{
+    font-size: 23px;
+}
+p{
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 7px;
 }
-.immagine3 > img{
-    width: 70%;
+p > i{
+    font-size: 12px;
+    padding-top: 5px;
 }
-.scritte-notifiche2 > p > i{
-    padding-right: 5px;
-}
-
-
-
-
-
-
-
-
-
-/* chat sulla destra */
-.opzioni2{
+/* input */
+.parte-input{
     width: 100%;
-    height: 10%;
-    background-color: lightgray;
+    height: 8%;
+}
+.centrare-input{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.centrare-input > input{
+    padding: 8px;
+    width: 100%;
+    height: 78%;
+    padding-left: 77px;
+    border-radius: 7px;
+    border-style: none;
+    background-color: rgb(189, 183, 183);
+    margin-top: 6px;
+}
+.centrare-input > i{
+    position: absolute;
+    top: 16px;
+    left: 10px;
+}
+/* chat sinistra */
+.chat-container{
+    width: 100%;
+    height: max-content;
+    margin-bottom: 15px;
+}
+.chat-dentro{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.img-chat{
+    width: 79px;
+    height: 60px;
+    border-radius: 30px;
+}
+.scritte-chat{
+    width: 100%;
+}
+.img-chat> img{
+    width: 100%;
+}
+.dentro-scritte{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-.chat{
+.dentro-scritte > span{
+    font-size: 15px;
+}
+
+
+
+
+
+
+/* destra */
+.destra{
+    height: 100vh;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(img/sfondo.jpg);
+}
+
+/* header */
+.contatto-header{
+    
+    background-color: rgb(189, 183, 183);
+    height: 11%;
+}
+.cerchio-header{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    
+}
+.dentro-chat{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.cerchio-header > img{
+    width: 100%;
     height: 100%;
-    background-color: bisque;
 }
-.immagine2{
-    width: 10%;
-    height: 50%;
-    border-radius: 40px;
-    margin-left: 15px;
+.centrare-header{
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 90%;
+    margin: 0 auto;
 }
-.immagine2 > img{
-    width: 85%;
+.icone-chat > i{
+    font-size: 20px;
+    padding-left: 20px;
 }
-.userimg2{
+.icone-chat{
+
+}
+
+
+/* sotto chat */
+.sotto-chat{
+    width: 100%;
+    height: 11%;
+    background-color: rgb(189, 183, 183);
+}
+.centrare-sotto{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
-.userimg2 > h2{
-    margin-left: 20px;
+.input-sotto > input{
+    padding-left: 15px;
+    padding-right: 585px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 7px;
+    border-style: none;
+}
+.icone-sotto > i{
+    font-size: 20px;
+}
+.invia-sotto > i{
+    font-size: 20px;
+}
+
+/* chat centrale  */
+.messaggi-centro{
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+.messaggi-centrare{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.chat-usersopra{
+    width: 100%;
+}
+.chat-user{
+    background-color: white;
+    width: max-content;
+    padding: 15px;
+    border-radius: 10px;
+}
+.chat-iosopra{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.chat-io{
+    background-color: greenyellow;
+    width: max-content;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
 }

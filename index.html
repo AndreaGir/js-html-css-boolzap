@@ -7,98 +7,147 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script> 
 </head>
 <body>
     <div id="tutto">
 
-        <div class="contatti">
+        <div class="centrale">
 
-            <div class="opzioni">
+            <div class="sinistra">
 
-                <div class="userimg">
-                    <div class="immagine">
-                        <img src="img/imgwhats.png" alt="">
+                <div class="header-sinistra">
+                    <!-- parte sopra hesder sinistra -->
+                    <div class="margin">
+                        <div class="img-utente">
+                            <img src="img/imgwhats.png" alt="">
+                        </div>
+    
+                        <div class="icone-header">
+                            <i class="fa-solid fa-circle-notch"></i>
+                            <i class="fa-solid fa-message"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- parte blu -->
+                <div class="parte-notifiche">
+
+                    <div class="centro-notifiche">
+                        <div class="icona-campana">
+                            <i class="fa-solid fa-bell-slash"></i>
+                        </div>
+
+                        <div class="scritte">
+                            <h3>Ricevi notifiche di nuovi messaggi</h3>
+                            <p>Attiva notifiche desktop<i class="fa-solid fa-angle-right"></i></p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- parte input -->
+                <div class="parte-input">
+                    <div class="centrare-input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Cerca o inizia una nuova chat">
                     </div>
                 </div>
 
-                <div class="icone">
-                    <i class="fa-solid fa-circle-notch"></i>
-                    <i class="fa-solid fa-message"></i>
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
+                <!-- parte chat  -->
+                <div class="chat-container" v-for="(carte , i) in listaContatti">
+                    <div class="chat-dentro">
+                        <div class="img-chat">
+                            <img src="img/img2.png" alt="">
+                        </div>
 
-            </div>
-
-            <div class="notifiche">
-
-                <div class="icona-notifiche">
-                    <div class="cerchio-not">
-                        <i class="fa-regular fa-bell-slash"></i>
-                    </div>
-                </div>
-
-                <div class="scritte-notifiche">
-                    <h3>Ricevi notifiche di nuovi messaggi</h3>
-                    <h4>Attiva notifiche desktop <i class="fa-solid fa-angle-right"></i></h4>
-                </div>
-
-            </div>
-
-            <div class="cerca-user">
-                <div class="barra">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input  type="text" placeholder="Cerca o inizia una nuova chat" value="">
-                </div>
-            </div>
-
-            <div class="chat-utenti">
-                <div v-for="(utenti , i) in listaContatti" class="casella">
-
-                    <div class="notifiche3">
-
-                        <div class="userimg3">
-                            <div class="immagine3">
-                                <img :src="img" alt="">
+                        <div class="scritte-chat">
+                            <div class="dentro-scritte">
+                                <h3>{{carte.nome}}</h3>
+                                <span>{{carte.ora}}</span>
                             </div>
+                            
+                            <p>
+                                <i class="fa-solid fa-check"></i>
+                                {{carte.messaggio}}
+                            </p>
                         </div>
-        
-                        <div class="scritte-notifiche2">
-                            <h3>{{listaContatti.nome}}</h3>
-                            <p><i class="fa-solid fa-check"></i>{{listaContatti.messaggio}}</p>
-                        </div>
-        
+
                     </div>
 
                 </div>
+
             </div>
+            <!-- parte chat destra -->
+            <div class="destra">
+                <div class="contatto-header">
+                    <div class="centrare-header">
+                        <div class="dentro-chat">
+                            <div class="cerchio-header">
+                                <img src="img/img2.png" alt=""> 
+                            </div>
+                            <h2>Marco Rossi</h2>
+                        </div>
+                        
+                        
+                        
+
+                        <div class="icone-chat">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+
+                    </div>
+                   
+
+                </div>
+
+                <div class="messaggi-centro">
+                    <div class="messaggi-centrare">
+                        <div class="chat-usersopra">
+                            <span class="chat-user">
+                                Ciao amico come stai?
+                            </span>
+                            
+                        </div>
+                        <div class="chat-iosopra">
+                            <span class="chat-io">
+                                tutto bene grazie.
+                            </span>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+
+                <div class="sotto-chat">
+                    <div class="centrare-sotto">
+                        <div class="icone-sotto">
+                            <i class="fa-solid fa-clipboard-check"></i>
+                        </div>
+                        <div class="input-sotto">
+                            <input type="text" placeholder="Scrivi un messaggio">
+
+                        </div>
+                        <div class="invia-sotto">
+                            <i class="fa-solid fa-reply"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
 
         </div>
 
+        
 
-
-
-
-
-         <div class="chat" class="opzioni">
-            <div class="opzioni">
-
-                <div class="userimg2">
-                    <div class="immagine2">
-                        <img src="img/img2.png" alt="">
-                    </div>
-                    <h2>Franco </h2>
-                </div>
-
-                <div class="icone">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
-
-            </div>
-            
-
-        </div> 
+        
 
 
 

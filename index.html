@@ -59,13 +59,13 @@
 
                         <div class="userimg3">
                             <div class="immagine3">
-                                <img src="img/img2.png" alt="">
+                                <img :src="img" alt="">
                             </div>
                         </div>
         
                         <div class="scritte-notifiche2">
                             <h3>{{listaContatti.nome}}</h3>
-                            <p><i class="fa-solid fa-check"></i>Ciao, che fai?</p>
+                            <p><i class="fa-solid fa-check"></i>{{listaContatti.messaggio}}</p>
                         </div>
         
                     </div>

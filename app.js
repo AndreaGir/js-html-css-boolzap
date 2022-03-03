@@ -6,7 +6,7 @@
                 {
                     nome: 'Andrea',
                     messaggio: 'Ci vediamo dopo?',
-                    img: 'img/img3.jfif', 
+                    img: 'img/avatar1.png', 
                     ora: '11:27',
                 },
                 {
@@ -18,17 +18,22 @@
                 {
                     nome: 'Marco',
                     messaggio: 'come stai?',
-                    img: 'img/img2.jfif', 
+                    img: 'img/img2.png', 
                     ora: '1:32',
                 },
                 {
                     nome: 'federico',
                     messaggio: 'che fai?',
-                    img: 'img/img2.jfif', 
-                    ora: '1:32',
+                    img: 'img/avatar5.png', 
+                    ora: '10:38',
                 },
                 
             ]
+        },
+        methods: {
+            cambiaChat: function(){
+                
+            }
         }
     }
 ) 

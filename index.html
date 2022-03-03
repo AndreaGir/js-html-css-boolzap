@@ -60,7 +60,7 @@
                 <div class="chat-container" v-for="(carte , i) in listaContatti">
                     <div class="chat-dentro">
                         <div class="img-chat">
-                            <img src="img/img2.png" alt="">
+                            <img :src="carte.img" alt="">
                         </div>
 
                         <div class="scritte-chat">
@@ -88,7 +88,7 @@
                             <div class="cerchio-header">
                                 <img src="img/img2.png" alt=""> 
                             </div>
-                            <h2>Marco Rossi</h2>
+                            <h2>Marco </h2>
                         </div>
                         
                         
@@ -106,7 +106,7 @@
 
                 <div class="messaggi-centro">
                     <div class="messaggi-centrare">
-                        <div class="chat-usersopra">
+                        <div class="chat-sopra">
                             <span class="chat-user">
                                 Ciao amico come stai?
                             </span>

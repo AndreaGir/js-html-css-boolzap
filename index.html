@@ -57,7 +57,7 @@
                 </div>
 
                 <!-- parte chat  -->
-                <div class="chat-container" v-for="(carte , i) in listaContatti">
+                <div @click="avanti" class="chat-container" v-for="(carte , i) in listaContatti">
                     <div class="chat-dentro">
                         <div class="img-chat">
                             <img :src="carte.img" alt="">
@@ -81,14 +81,14 @@
 
             </div>
             <!-- parte chat destra -->
-            <div class="destra">
+            <div v-for="(carte , i) in listaContatti"  class="destra notactive " :class=" i === currentIndex ? 'active' : '' ">
                 <div class="contatto-header">
                     <div class="centrare-header">
                         <div class="dentro-chat">
                             <div class="cerchio-header">
-                                <img src="img/img2.png" alt=""> 
+                                <img :src="carte.img" alt=""> 
                             </div>
-                            <h2>Marco </h2>
+                            <h2>{{carte.nome}} </h2>
                         </div>
                         
                         
@@ -108,13 +108,13 @@
                     <div class="messaggi-centrare">
                         <div class="chat-sopra">
                             <span class="chat-user">
-                                Ciao amico come stai?
+                                {{carte.messaggio}}
                             </span>
                             
                         </div>
                         <div class="chat-iosopra">
                             <span class="chat-io">
-                                tutto bene grazie.
+                                {{carte.risp}}
                             </span>
                         </div>
                     </div>

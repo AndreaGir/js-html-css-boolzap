@@ -266,3 +266,11 @@ p > i{
 i{
     cursor: pointer;
 }
+
+
+.notactive.active{
+    display: block;
+}
+.notactive{
+    display: none;
+}

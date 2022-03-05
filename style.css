@@ -104,7 +104,7 @@ p > i{
     left: 10px;
 }
 /* chat sinistra */
-.chat-container{
+.chatcontainer{
     width: 100%;
     height: max-content;
     margin-bottom: 15px;
@@ -257,10 +257,10 @@ p > i{
 
 
 /* altro */
-.chat-container{
+.chatcontainer{
     cursor: pointer;
 }
-.chat-container:hover{
+.chatcontainer:hover{
     background-color: rgba(189, 183, 183,1);
 }
 i{

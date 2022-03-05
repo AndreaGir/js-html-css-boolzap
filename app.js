@@ -3,7 +3,7 @@
         el: '#tutto',
         data:{
 
-            active: false, 
+            activeElement: null, 
 
             listaContatti: [
                 {
@@ -43,11 +43,9 @@
 
         },
         methods: {
-            avanti: function(){
-                if( this.currentIndex  < this.listaContatti.length -1  ) 
-                this.currentIndex++
-                 else
-                    this.currentIndex = 0 
+            elementClick: function(chatcontainer){
+               this.activeElement = chatcontainer;
+               console.log('okok')
             },
             
         },

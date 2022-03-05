@@ -57,7 +57,7 @@
                 </div>
 
                 <!-- parte chat  -->
-                <div @click="avanti" class="chat-container" v-for="(carte , i) in listaContatti">
+                <div @click="elementClick(carte)" class="chatcontainer" v-for="carte in listaContatti" >
                     <div class="chat-dentro">
                         <div class="img-chat">
                             <img :src="carte.img" alt="">
@@ -81,7 +81,7 @@
 
             </div>
             <!-- parte chat destra -->
-            <div v-for="(carte , i) in listaContatti"  class="destra notactive " :class=" i === currentIndex ? 'active' : '' ">
+            <div v-for="carte in listaContatti"  class="destra notactive" :class="activeElement === carte ? 'active' : '' ">
                 <div class="contatto-header">
                     <div class="centrare-header">
                         <div class="dentro-chat">
